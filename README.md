@@ -255,3 +255,9 @@ app delete itself, so the last step is deleting `LiteClip.exe` yourself.
 
 LiteClip: MIT (see `LICENSE`). FFmpeg: LGPL 2.1+, see `tools/FFMPEG-LICENSE.txt`; LiteClip runs the unmodified
 official FFmpeg program and does not include FFmpeg code.
+
+## A message from Gurtspec
+
+This was made with AI. Please don't criticise me for taking coders' jobs or anything like that. I don't support
+that either. I just think it's fair for gamers and ordinary people to have a good clipping app that isn't bloated,
+without all the unnecessary ads and corporate bullshit.
