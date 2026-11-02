@@ -5,6 +5,10 @@ and when something cool happens you press a shortcut to save it. Then trim it, o
 
 No accounts. No uploads. No ads. No tracking. **No internet access at all.**
 
+![A clip recorded with LiteClip: an animated rainy pixel-art desktop](docs/demo.webp)
+
+*Recorded with LiteClip (shortened to 10 seconds here).*
+
 ## The promise
 
 LiteClip will never have:
