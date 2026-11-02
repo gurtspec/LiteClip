@@ -1,0 +1,64 @@
+# Builds LiteClip on GitHub's own Windows computers, in public, from the code in this repository.
+#  - Every push and pull request: build it and check that no internet code crept in.
+#  - A version tag (e.g. v1.2): also publish the release zip, with SHA-256 fingerprints and a
+#    GitHub "build attestation", which proves the zip was made here from this exact code.
+name: Build
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    permissions:
+      contents: write        # create the GitHub release (tags only)
+      id-token: write        # sign the build attestation (tags only)
+      attestations: write
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+
+      - name: Check there's no internet code in the app
+        shell: powershell
+        run: |
+          $bad = Select-String -Path src\*.cs -Pattern 'System\.Net\b|HttpClient|WebClient|WebRequest|TcpClient|UdpClient|\bSocket\b|Dns\.'
+          if ($bad) { $bad | ForEach-Object { Write-Host $_ }; throw 'LiteClip must never connect to the internet.' }
+          Write-Host 'OK: no network code in src\'
+
+      - name: Build LiteClip from source
+        shell: powershell
+        run: ./build.ps1
+
+      - name: Make the release zip
+        shell: powershell
+        run: ./package.ps1
+
+      - name: Keep the build (download it from this run's page)
+        uses: actions/upload-artifact@v4
+        with:
+          name: LiteClip
+          path: release/*.zip
+
+      - name: Prove where the files came from (build attestation)
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: |
+            release/*.zip
+            dist/LiteClip.exe
+
+      - name: Publish the GitHub release
+        if: startsWith(github.ref, 'refs/tags/v')
+        shell: powershell
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $zip = (Get-ChildItem release\*.zip).FullName
+          gh release create "${{ github.ref_name }}" $zip --title "LiteClip ${{ github.ref_name }}" --notes-file release\NOTES.md

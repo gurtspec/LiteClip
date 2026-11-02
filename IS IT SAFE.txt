@@ -1,0 +1,77 @@
+IS LITECLIP SAFE?  (no tech knowledge needed)
+==============================================
+
+LiteClip is a free clipping app: press Alt+X and it saves the last 15 seconds,
+30 seconds or 1 minute (or any length you set) of your screen and game sound.
+That's all it does. Your microphone is only recorded if you turn it on in
+Settings.
+
+You don't have to trust anyone. Here's how to check it yourself in 2 minutes:
+
+
+1) LET 70 ANTIVIRUS PROGRAMS CHECK IT
+   - Go to  www.virustotal.com
+   - Drag  LiteClip.exe  onto the page (or click "Choose file").
+   - You'll see how many of ~70 antivirus programs (Microsoft, Kaspersky,
+     Bitdefender, Norton, ...) found anything.
+
+   Note: brand-new apps from small creators sometimes get 1 or 2 flags from
+   small, over-careful scanners, just because the app is new and not "signed"
+   (signing costs money every year). What matters: the big names are clean.
+
+
+2) SCAN IT WITH WINDOWS' OWN ANTIVIRUS
+   - Right-click the LiteClip folder  ->  "Scan with Microsoft Defender".
+
+
+3) SIGNS ANYONE CAN SEE THAT IT'S HARMLESS
+   - It never asks for admin rights (no "Do you want to allow this app to
+     make changes?" pop-up).
+   - There's no installer. It's just this folder. Settings -> "Remove LiteClip"
+     deletes everything it made (your clips are kept).
+   - No ads, no account, nothing to sign up for. It's light too: about 4 MB of
+     memory while it waits in the tray.
+   - It doesn't use the internet. You can block it in Windows Firewall and it
+     keeps working exactly the same.
+   - It only saves things in: Videos\LiteClip (your clips), a temp folder for
+     the last few minutes of recording, and a small settings file.
+   - Settings -> Advanced shows the exact command it uses to record. Nothing hidden.
+
+
+"WINDOWS PROTECTED YOUR PC" ?
+   Windows shows this blue warning for every new app that isn't signed with a
+   paid certificate, not because something is wrong. Click  "More info"  then
+   "Run anyway".
+
+
+WHAT'S IN THIS FOLDER
+   LiteClip.exe          the app
+   tools\ffmpeg.exe      the recording engine (FFmpeg, the same free engine
+   tools\ffprobe.exe     used by OBS, VLC and YouTube; official version)
+   source\               the full source code, for anyone who wants to read it
+                         or build the app themselves
+   lang\                 translations (plain text files you can open in Notepad)
+   FINGERPRINTS.txt      unique "fingerprints" of each file, so you can confirm
+                         nobody changed them (they're also on the GitHub release
+                         page, which GitHub builds in public from the source)
+
+
+HOW TO USE
+   1. Double-click LiteClip.exe. A window opens, and LiteClip starts recording
+      in the background (white ring with a red dot near your clock).
+   2. In a game, press Alt+X to save the last 30 seconds (change the length
+      to 15s or 1 min in the window).
+   3. Your clips are in  Videos\LiteClip. Open LiteClip to watch and trim them.
+   4. Open Settings in LiteClip to change anything: shortcuts, clip lengths,
+      quality, microphone, file names, colours and more. README.md lists
+      every option.
+
+   Want it on a USB stick? Settings -> Advanced -> Portable mode.
+
+   To remove it: Settings -> "Remove LiteClip from this PC". It asks
+   "Are you sure? It's permanent." and then deletes everything it made.
+   Your clips stay. Then delete LiteClip.exe yourself.
+
+
+LiteClip was made with the help of AI (Claude). All of the code is included,
+short and readable. It's free and open source (MIT license).

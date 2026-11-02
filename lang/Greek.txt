@@ -1,0 +1,194 @@
+# LiteClip - Ελληνικά (Greek)
+# Format: English text => translation. Missing lines stay in English.
+language => Ελληνικά
+
+# ---- Editor.xaml
+←  All clips => ←  Όλα τα κλιπ
+Delete => Διαγραφή
+Show in folder => Εμφάνιση στον φάκελο
+Copy => Αντιγραφή
+Copies the clip so you can paste it into Discord, a chat or a folder. => Αντιγράφει το κλιπ για να το επικολλήσεις στο Discord, σε μια συνομιλία ή σε έναν φάκελο.
+Fit for Discord => Για το Discord
+Makes a smaller copy of the selected part that fits Discord's upload limit, and copies it. => Φτιάχνει ένα μικρότερο αντίγραφο του επιλεγμένου κομματιού που χωράει στο όριο του Discord και το αντιγράφει.
+[  Set start => [  Αρχή
+Set end  ] => Τέλος  ]
+Reset => Επαναφορά
+Save trimmed clip => Αποθήκευση κομμένου κλιπ
+Exact cut => Ακριβές κόψιμο
+Exact: cuts on the exact frame (re-encodes on your GPU). Off: instant, but cuts to the nearest second. => Ενεργό: κόβει στο ακριβές καρέ (ξανακωδικοποιεί στην κάρτα γραφικών). Ανενεργό: άμεσο, αλλά κόβει στο πλησιέστερο δευτερόλεπτο.
+
+# ---- Main.xaml
+Starting… => Εκκίνηση…
+Clip length => Διάρκεια κλιπ
+Save clip => Αποθήκευση κλιπ
+Folder => Φάκελος
+Settings => Ρυθμίσεις
+
+# ---- Settings.xaml
+Save settings => Αποθήκευση ρυθμίσεων
+Clips and shortcuts => Κλιπ και συντομεύσεις
+Clip lengths => Διάρκειες κλιπ
+Seconds, separated by commas (5 to 300). Use 2m for minutes. Add @shortcut to give a length its own key, e.g.  15, 30, 2m@Alt+F10 => Δευτερόλεπτα, χωρισμένα με κόμμα (5 έως 300). Γράψε 2m για λεπτά. Πρόσθεσε @συντόμευση για να έχει μια διάρκεια δικό της πλήκτρο, π.χ.  15, 30, 2m@Alt+F10
+Pause / resume => Παύση / συνέχεια
+Mute microphone => Σίγαση μικροφώνου
+Open LiteClip => Άνοιγμα LiteClip
+Click a box and press the keys. Backspace clears it. => Κάνε κλικ σε ένα κουτί και πάτα τα πλήκτρα. Το Backspace το καθαρίζει.
+Video => Βίντεο
+Monitor => Οθόνη
+Resolution => Ανάλυση
+Native is the lightest (all on the graphics card). Lower resolutions make smaller files but use some CPU. => Η εγγενής είναι η πιο ελαφριά (όλα στην κάρτα γραφικών). Οι χαμηλότερες αναλύσεις κάνουν μικρότερα αρχεία αλλά χρησιμοποιούν λίγο τον επεξεργαστή.
+Frame rate => Καρέ ανά δευτερόλεπτο
+Custom fps => Δικά σου fps
+Codec => Κωδικοποίηση
+H.264 plays everywhere. HEVC and AV1 make smaller files at the same quality (AV1 needs a newer graphics card and player). => Το H.264 παίζει παντού. Τα HEVC και AV1 κάνουν μικρότερα αρχεία στην ίδια ποιότητα (το AV1 θέλει πιο καινούρια κάρτα γραφικών και πρόγραμμα αναπαραγωγής).
+Encoder => Κωδικοποιητής
+Quality => Ποιότητα
+Best => Καλύτερη
+Smallest => Μικρότερη
+Show the mouse cursor in clips => Εμφάνιση του κέρσορα στα κλιπ
+Audio => Ήχος
+Record game and system sound => Ηχογράφηση ήχου παιχνιδιού και συστήματος
+Record my microphone => Ηχογράφηση του μικροφώνου μου
+Microphone => Μικρόφωνο
+Muted (records silence instead of your voice) => Σε σίγαση (γράφει σιωπή αντί για τη φωνή σου)
+Keep game sound and microphone on separate tracks (for video editors) => Ήχος παιχνιδιού και μικρόφωνο σε ξεχωριστά κανάλια (για προγράμματα μοντάζ)
+Files => Αρχεία
+Clips folder => Φάκελος κλιπ
+Change => Αλλαγή
+File name => Όνομα αρχείου
+Use {app} (the game or app you were in), {date}, {time}, {length}. => Χρησιμοποίησε {app} (το παιχνίδι ή η εφαρμογή που ήσουν), {date}, {time}, {length}.
+Clean up old clips => Καθάρισμα παλιών κλιπ
+Old clips go to the Recycle Bin, so you can still get them back. 0 = never. => Τα παλιά κλιπ πάνε στον Κάδο Ανακύκλωσης, οπότε μπορείς να τα πάρεις πίσω. 0 = ποτέ.
+Keep for => Κράτα για
+days    and at most => μέρες    και το πολύ
+The size the editor's Fit for Discord button aims for. 10 = Discord's free limit, 50 = Nitro Basic, 500 = Nitro. => Το μέγεθος που στοχεύει το κουμπί «Για το Discord». 10 = δωρεάν όριο του Discord, 50 = Nitro Basic, 500 = Nitro.
+Look and feel => Εμφάνιση
+Show a pop-up when a clip is saved => Ειδοποίηση όταν αποθηκεύεται ένα κλιπ
+Play a short sound when a clip is saved => Σύντομος ήχος όταν αποθηκεύεται ένα κλιπ
+Accent colour => Χρώμα έμφασης
+Language => Γλώσσα
+Add your own: copy lang\template.txt, fill in the translations, save it as lang\YourLanguage.txt. => Πρόσθεσε τη δική σου: αντέγραψε το lang\template.txt, συμπλήρωσε τις μεταφράσεις και αποθήκευσέ το ως lang\ΗΓλώσσαΣου.txt.
+Open language folder => Άνοιγμα φακέλου γλωσσών
+Advanced => Για προχωρημένους
+Start with Windows (runs quietly in the tray) => Εκκίνηση με τα Windows (τρέχει αθόρυβα στη γραμμή εργασιών)
+Run after saving => Εκτέλεση μετά την αποθήκευση
+Optional command to run after each clip, {file} = the clip. Example:  explorer /select,{file}   Only put commands here that you trust. => Προαιρετική εντολή που τρέχει μετά από κάθε κλιπ, {file} = το κλιπ. Παράδειγμα:  explorer /select,{file}   Βάλε εδώ μόνο εντολές που εμπιστεύεσαι.
+Recording buffer folder => Φάκελος προσωρινής εγγραφής
+Where the rolling last-few-minutes recording is kept. Empty = Windows' temp folder. Pick a fast drive if you like. => Εκεί κρατιέται η συνεχής εγγραφή των τελευταίων λεπτών. Κενό = ο φάκελος temp των Windows. Διάλεξε έναν γρήγορο δίσκο αν θέλεις.
+Default => Προεπιλογή
+Encoder frames in memory (NVIDIA) => Καρέ κωδικοποιητή στη μνήμη (NVIDIA)
+Each frame the graphics card keeps ready uses about 11 MB of RAM at 1440p. 1 = lightest, 4 = safest in very heavy games. => Κάθε καρέ που κρατάει έτοιμο η κάρτα γραφικών πιάνει περίπου 11 MB μνήμης στα 1440p. 1 = το πιο ελαφρύ, 4 = το πιο ασφαλές σε πολύ βαριά παιχνίδια.
+Custom encoder options => Δικές σου ρυθμίσεις κωδικοποιητή
+For FFmpeg experts. Replaces LiteClip's video encoder options, e.g.  -c:v hevc_nvenc -preset p7 -cq 20   Leave empty for normal. If recording stops working, empty this box. => Για όσους ξέρουν FFmpeg. Αντικαθιστά τις ρυθμίσεις κωδικοποίησης βίντεο του LiteClip, π.χ.  -c:v hevc_nvenc -preset p7 -cq 20   Άφησέ το κενό για κανονική λειτουργία. Αν σταματήσει η εγγραφή, άδειασε αυτό το κουτί.
+FFmpeg command LiteClip runs right now => Η εντολή FFmpeg που τρέχει τώρα το LiteClip
+Nothing hidden: this is exactly how your screen and sound are being recorded. => Τίποτα κρυφό: έτσι ακριβώς καταγράφονται η οθόνη και ο ήχος σου.
+Copy command => Αντιγραφή εντολής
+Portable mode => Φορητή λειτουργία
+Open settings file => Άνοιγμα αρχείου ρυθμίσεων
+Reset everything => Επαναφορά όλων
+About => Σχετικά
+Remove LiteClip => Αφαίρεση LiteClip
+Deletes everything LiteClip made on this PC: settings, thumbnails, temporary files, the recording buffer, the start-with-Windows shortcut and its program files. Your clips are kept. => Διαγράφει ό,τι έφτιαξε το LiteClip σε αυτόν τον υπολογιστή: ρυθμίσεις, μικρογραφίες, προσωρινά αρχεία, την προσωρινή εγγραφή, τη συντόμευση εκκίνησης με τα Windows και τα αρχεία του προγράμματος. Τα κλιπ σου μένουν.
+Remove LiteClip from this PC => Αφαίρεση του LiteClip από τον υπολογιστή
+
+# ---- Program.cs
+Something went wrong => Κάτι πήγε στραβά
+LiteClip is running => Το LiteClip τρέχει
+Press {0} to save the last {1}. => Πάτα {0} για να αποθηκεύσεις τα τελευταία {1}.
+Recording paused => Η εγγραφή σταμάτησε προσωρινά
+Recording resumed => Η εγγραφή συνεχίζεται
+Nothing is being recorded. => Δεν καταγράφεται τίποτα.
+Saving the last {0} is ready again in a moment. => Η αποθήκευση των τελευταίων {0} θα είναι έτοιμη σε λίγο.
+Microphone recording is off => Η ηχογράφηση μικροφώνου είναι κλειστή
+Turn it on in Settings → Audio first. => Άνοιξέ την πρώτα στις Ρυθμίσεις → Ήχος.
+Microphone muted => Μικρόφωνο σε σίγαση
+Microphone on => Μικρόφωνο ανοιχτό
+Your voice won't be in clips until you unmute. => Η φωνή σου δεν θα ακούγεται στα κλιπ μέχρι να βγάλεις τη σίγαση.
+Your voice is in clips again. => Η φωνή σου ακούγεται ξανά στα κλιπ.
+Clip saved => Το κλιπ αποθηκεύτηκε
+Couldn't save clip => Δεν αποθηκεύτηκε το κλιπ
+LiteClip is removed => Το LiteClip αφαιρέθηκε
+LiteClip removed its settings, temporary files and program files.\n\nYour clips are still in:\n{0}\n\nWindows doesn't let a running app delete itself, so one step is left: delete LiteClip.exe from the folder that opens next. => Το LiteClip αφαίρεσε τις ρυθμίσεις, τα προσωρινά αρχεία και τα αρχεία του προγράμματος.\n\nΤα κλιπ σου είναι ακόμα στο:\n{0}\n\nΤα Windows δεν αφήνουν μια εφαρμογή που τρέχει να διαγράψει τον εαυτό της, οπότε μένει ένα βήμα: διέγραψε το LiteClip.exe από τον φάκελο που ανοίγει μετά.
+Open the folder => Άνοιγμα του φακέλου
+
+# ---- Recorder.cs
+FFmpeg is missing. Run build.ps1 again. => Λείπει το FFmpeg. Τρέξε ξανά το build.ps1.
+FFmpeg didn't connect to the audio stream. => Το FFmpeg δεν συνδέθηκε στον ήχο.
+Recording is paused. => Η εγγραφή είναι σε παύση.
+The recorder isn't running yet. => Η εγγραφή δεν έχει ξεκινήσει ακόμα.
+Nothing recorded yet. Try again in a few seconds. => Δεν έχει καταγραφεί τίποτα ακόμα. Δοκίμασε ξανά σε λίγα δευτερόλεπτα.
+FFmpeg couldn't write the clip. => Το FFmpeg δεν μπόρεσε να γράψει το κλιπ.
+That's too long to fit in {0} MB. Trim it to about {1} seconds or less. => Είναι πολύ μεγάλο για να χωρέσει σε {0} MB. Κόψ' το στα {1} δευτερόλεπτα περίπου ή λιγότερο.
+Couldn't get it under {0} MB. Trim it a bit shorter and try again. => Δεν έγινε να πέσει κάτω από {0} MB. Κόψ' το λίγο πιο μικρό και δοκίμασε ξανά.
+FFmpeg took too long. => Το FFmpeg άργησε πολύ.
+
+# ---- Ui.cs
+Cancel => Άκυρο
+Shortcut for this length: {0} => Συντόμευση για αυτή τη διάρκεια: {0}
+Paused => Σε παύση
+Not recording: {0} => Δεν γίνεται εγγραφή: {0}
+Recording · last {0} ready · {1} saves {2} => Εγγραφή · έτοιμα τα τελευταία {0} · το {1} αποθηκεύει {2}
+no sound => χωρίς ήχο
+mic muted => μικρόφωνο σε σίγαση
+mic on => μικρόφωνο ανοιχτό
+No clips yet.\nPress {0} any time (even in a game) to save the last {1}. => Δεν υπάρχουν κλιπ ακόμα.\nΠάτα {0} οποιαδήποτε στιγμή (ακόμα και μέσα σε παιχνίδι) για να αποθηκεύσεις τα τελευταία {1}.
+Edit => Επεξεργασία
+Copied => Αντιγράφηκε
+Paste it anywhere with Ctrl+V. => Επικόλλησέ το όπου θέλεις με Ctrl+V.
+Copied. Paste it into Discord, a chat or a folder with Ctrl+V. => Αντιγράφηκε. Επικόλλησέ το στο Discord, σε μια συνομιλία ή σε έναν φάκελο με Ctrl+V.
+Couldn't copy: another app is using the clipboard. Try again. => Δεν έγινε αντιγραφή: άλλη εφαρμογή χρησιμοποιεί το πρόχειρο. Δοκίμασε ξανά.
+Couldn't play this clip: {0} => Δεν παίζει αυτό το κλιπ: {0}
+Space: play/pause · ← →: step · I / O: set start / end · drag the white handles to trim. => Space: αναπαραγωγή/παύση · ← →: βήμα · I / O: αρχή / τέλος · σύρε τις λευκές λαβές για να κόψεις.
+Saving (cutting on the exact frame)… => Αποθήκευση (κόψιμο στο ακριβές καρέ)…
+Saving… => Αποθήκευση…
+Saved: {0} (your original clip is untouched) => Αποθηκεύτηκε: {0} (το αρχικό κλιπ έμεινε ανέγγιχτο)
+Couldn't save: {0} => Δεν αποθηκεύτηκε: {0}
+Trimmed clip saved => Το κομμένο κλιπ αποθηκεύτηκε
+Making a copy under {0} MB… => Φτιάχνω αντίγραφο κάτω από {0} MB…
+Couldn't make it: {0} => Δεν έγινε: {0}
+Saved {0} ({1} MB). => Αποθηκεύτηκε το {0} ({1} MB).
+It's copied: paste it in Discord with Ctrl+V. => Αντιγράφηκε: επικόλλησέ το στο Discord με Ctrl+V.
+Ready for Discord => Έτοιμο για το Discord
+Copied. Paste it with Ctrl+V. => Αντιγράφηκε. Επικόλλησέ το με Ctrl+V.
+Click again to delete => Κλικ ξανά για διαγραφή
+Couldn't delete: {0} => Δεν διαγράφηκε: {0}
+Monitor {0} => Οθόνη {0}
+very high => πολύ υψηλή
+balanced => ισορροπημένη
+smaller => μικρότερη
+smallest => η μικρότερη
+Windows default microphone => Προεπιλεγμένο μικρόφωνο των Windows
+e.g. => π.χ.
+Where should LiteClip save clips? => Πού να αποθηκεύει τα κλιπ το LiteClip;
+(default) => (προεπιλογή)
+Where should LiteClip keep its rolling recording? => Πού να κρατάει το LiteClip τη συνεχή εγγραφή;
+(not recording right now) => (δεν γίνεται εγγραφή αυτή τη στιγμή)
+Command copied. => Η εντολή αντιγράφηκε.
+On. Settings, thumbnails and the recording buffer are kept inside LiteClip's own folder ({0}), so it leaves nothing on this PC and can run from a USB stick. => Ανοιχτή. Ρυθμίσεις, μικρογραφίες και η προσωρινή εγγραφή μένουν μέσα στον φάκελο του LiteClip ({0}), οπότε δεν αφήνει τίποτα στον υπολογιστή και τρέχει και από στικάκι USB.
+Off. Turn it on to carry LiteClip on a USB stick: settings, thumbnails and the recording buffer move into LiteClip's own folder. You can also turn it on by putting an empty file named portable.txt next to LiteClip.exe. => Κλειστή. Άνοιξέ την για να έχεις το LiteClip σε στικάκι USB: ρυθμίσεις, μικρογραφίες και η προσωρινή εγγραφή μεταφέρονται στον φάκελο του LiteClip. Μπορείς επίσης να την ανοίξεις βάζοντας ένα άδειο αρχείο με όνομα portable.txt δίπλα στο LiteClip.exe.
+Turn off portable mode (restarts LiteClip) => Κλείσιμο φορητής λειτουργίας (επανεκκινεί το LiteClip)
+Turn on portable mode (restarts LiteClip) => Άνοιγμα φορητής λειτουργίας (επανεκκινεί το LiteClip)
+Click again to reset => Κλικ ξανά για επαναφορά
+Are you sure? It's permanent. => Σίγουρα; Είναι οριστικό.
+LiteClip will delete its settings, thumbnails, temporary files, recording buffer, start-with-Windows shortcut and program files. This can't be undone.\n\nYour clips stay in {0}. => Το LiteClip θα διαγράψει τις ρυθμίσεις, τις μικρογραφίες, τα προσωρινά αρχεία, την προσωρινή εγγραφή, τη συντόμευση εκκίνησης και τα αρχεία του προγράμματος. Δεν αναιρείται.\n\nΤα κλιπ σου μένουν στο {0}.
+LiteClip {0} · free and open source (MIT license). => LiteClip {0} · δωρεάν και ανοιχτού κώδικα (άδεια MIT).
+Recording with {0}. Clips never leave your PC: no internet access, no accounts, no tracking. => Εγγραφή με {0}. Τα κλιπ δεν φεύγουν ποτέ από τον υπολογιστή σου: χωρίς ίντερνετ, χωρίς λογαριασμούς, χωρίς παρακολούθηση.
+Settings file: {0} => Αρχείο ρυθμίσεων: {0}
+Program folder: {0} => Φάκελος προγράμματος: {0}
+Saved. => Αποθηκεύτηκε.
+Recording restarted with the new settings. => Η εγγραφή ξεκίνησε ξανά με τις νέες ρυθμίσεις.
+These shortcuts are invalid or used by another app: {0} => Αυτές οι συντομεύσεις δεν ισχύουν ή τις χρησιμοποιεί άλλη εφαρμογή: {0}
+Couldn't switch: {0} => Δεν έγινε η αλλαγή: {0}
+Add Ctrl, Alt or Shift (or use an F-key). Backspace clears a box. => Πρόσθεσε Ctrl, Alt ή Shift (ή χρησιμοποίησε ένα πλήκτρο F). Το Backspace καθαρίζει ένα κουτί.
+your NVIDIA graphics card (NVENC) => κάρτα γραφικών NVIDIA (NVENC)
+your AMD graphics card (AMF) => κάρτα γραφικών AMD (AMF)
+Windows' built-in encoder => ενσωματωμένος κωδικοποιητής των Windows
+{0} on {1} => {0}, {1}
+Show => Εμφάνιση
+Couldn't copy, try again. => Δεν έγινε αντιγραφή, δοκίμασε ξανά.
+Save last {0} => Αποθήκευση τελευταίων {0}
+Open clips folder => Άνοιγμα φακέλου κλιπ
+Quit LiteClip => Έξοδος από το LiteClip
+Unmute microphone => Κατάργηση σίγασης μικροφώνου
+Resume recording => Συνέχιση εγγραφής
+Pause recording => Παύση εγγραφής

@@ -1,0 +1,5 @@
+# Keep line endings consistent for everyone (Windows-style in the working copy, normalised in the repository).
+* text=auto
+*.exe binary
+*.png binary
+*.ico binary

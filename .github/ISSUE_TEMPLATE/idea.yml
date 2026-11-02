@@ -1,0 +1,16 @@
+name: Idea
+description: Suggest something for LiteClip
+labels: [idea]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        LiteClip stays small on purpose. Ideas that keep it light and simple are the most likely to happen.
+        Things it will never have: ads, accounts, cloud uploads, tracking, or anything that needs the internet.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+      description: And what would you use it for?
+    validations:
+      required: true

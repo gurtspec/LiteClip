@@ -1,0 +1,4 @@
+# Build output (people build it themselves with build.ps1)
+dist/
+# Release zips (made by package.ps1, published on GitHub Releases, not stored in the code)
+release/

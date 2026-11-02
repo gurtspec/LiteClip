@@ -1,0 +1,33 @@
+name: Something's not working
+description: Report a bug in LiteClip
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping! Please don't paste anything private (your name, file paths with your name in them, etc.).
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: LiteClip version
+      description: Settings → About
+      placeholder: "1.2"
+    validations:
+      required: true
+  - type: input
+    id: gpu
+    attributes:
+      label: Graphics card and Windows version
+      placeholder: "NVIDIA RTX 4070, Windows 11 24H2"
+  - type: textarea
+    id: command
+    attributes:
+      label: FFmpeg command (optional)
+      description: Settings → Advanced → "Copy command". Helps a lot with recording problems.
+      render: text
