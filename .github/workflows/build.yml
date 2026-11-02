@@ -23,7 +23,7 @@ jobs:
       attestations: write
     steps:
       - name: Get the code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Check there's no internet code in the app
         shell: powershell
@@ -41,14 +41,14 @@ jobs:
         run: ./package.ps1
 
       - name: Keep the build (download it from this run's page)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: LiteClip
           path: release/*.zip
 
       - name: Prove where the files came from (build attestation)
         if: startsWith(github.ref, 'refs/tags/v')
-        uses: actions/attest-build-provenance@v2
+        uses: actions/attest-build-provenance@v3
         with:
           subject-path: |
             release/*.zip
