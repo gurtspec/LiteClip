@@ -258,6 +258,6 @@ official FFmpeg program and does not include FFmpeg code.
 
 ## A message from Gurtspec
 
-This was made with AI. Please don't criticise me for taking coders' jobs or anything like that. I don't support
-that either. I just think it's fair for gamers and ordinary people to have a good clipping app that isn't bloated,
-without all the unnecessary ads and corporate bullshit.
+Hello everyone, i made LiteClip with claude opus 5.5. Don't criticise me on stealing coders' jobs. I don't support that either. I just think its fair for gamers and ordinary people to have a good clipping app which isn't bloated and doesn't contain any corporate bullshit.
+
+-Gurtspec
